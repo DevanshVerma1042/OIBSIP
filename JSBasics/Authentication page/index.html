@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Login Authentication System</h1>
+        
+        <div id="auth-container">
+            <div id="login-section" class="auth-section">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" required>
+                    
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" required>
+                    
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="#" id="show-register">Register here</a></p>
+            </div>
+
+            <div id="register-section" class="auth-section">
+                <h2>Register</h2>
+                <form id="register-form">
+                    <label for="register-email">Email:</label>
+                    <input type="email" id="register-email" required>
+                    
+                    <label for="register-password">Password:</label>
+                    <input type="password" id="register-password" required>
+                    
+                    <button type="submit">Register</button>
+                </form>
+                <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
+            </div>
+        </div>
+
+        <div id="secured-page" class="secured-page">
+            <h2>Welcome to the Secured Page</h2>
+            <p>This page is only accessible after logging in.</p>
+            <button id="logout">Logout</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
